@@ -1,7 +1,7 @@
 {
-    "name": "Modelater Blocked Pop-Up Blocker",
+    "name": "Modelater Blocked Pop-Up Blocker On Youtube",
     "version": "1.0",
-    "description": "Block Annoying  Modelater Blocked Pop-up!",
+    "description": "Block Annoying  Modelater Blocked Pop-up On Youtube!",
     "manifest_version": 2,
     "content_scripts": [
         {
