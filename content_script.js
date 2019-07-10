@@ -1,23 +1,23 @@
 let fckingQuerys = [
-    '#chat',
-    // '#contents > yt-live-chat-renderer',
-    // 'yt-live-chat-app',
+    'yt-live-chat-upsell-dialog-renderer'
 ];
+
+const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
 
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState == "complete") {
         fckingQuerys.forEach(
             val => {
-                window.setTimeout(() => {
+                sleep(2450).then(() => { // set 6500 with inspector
                     let iframe = document.getElementById('chatframe');
-                    let fckingElement = iframe.contentWindow.document.querySelector(val);
+                    let fckingElement = iframe.contentDocument.querySelector(val);
                     if (fckingElement) {
                         fckingElement.parentElement.removeChild(fckingElement);
                     }
-                }, 1600);
-
+                });
             }
         );
     }
 });
-

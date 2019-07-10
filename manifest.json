@@ -1,7 +1,7 @@
 {
-    "name": "Elements Blocker",
+    "name": "Modelater Blocked Pop-Up Blocker",
     "version": "1.0",
-    "description": "Block Fcking Elements!",
+    "description": "Block Annoying  Modelater Blocked Pop-up!",
     "manifest_version": 2,
     "content_scripts": [
         {
